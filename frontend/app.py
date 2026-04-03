@@ -11,6 +11,8 @@ topic = st.text_input("输入小说题材（例如：都市+系统+逆袭）")
 
 if st.button("生成小说大纲"):
     res = requests.post(f"{API}/create_story", params={"topic": topic})
+    print("status:", res.status_code)
+    print("text:", res.text)
     data = res.json()
 
     st.session_state["story_id"] = data["story_id"]
