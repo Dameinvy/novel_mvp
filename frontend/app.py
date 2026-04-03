@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # 👉 上线后改成你的 Render 地址
-API = "http://localhost:8000"
+API = "https://novel-mvp.onrender.com"
 
 st.title("📚 AI番茄小说生成器")
 
