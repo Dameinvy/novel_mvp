@@ -9,6 +9,7 @@ STORY_DB = {}
 
 @app.get("/")
 def root():
+    print("🔥 VERSION 2026-04-03")
     return {"msg": "AI Novel API Running"}
 
 
